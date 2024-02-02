@@ -1,0 +1,13 @@
+[package]
+name = "wasm_example"
+version = "0.1.0"
+edition = "2021"
+
+[package.metadata.wasm-pack]
+wasm-opt = false  # Desactivar wasm-opt
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2"
